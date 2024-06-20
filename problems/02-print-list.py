@@ -3,7 +3,7 @@
 
 # Write your solution here.
 def print_list(list):
-    pass
+    print(*list)
 
 
 lst1 = [1, 2, 5, 1429]

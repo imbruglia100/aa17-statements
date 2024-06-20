@@ -5,7 +5,17 @@
 # from A-F. All alphabetic characters may be uppercase or lowercase.
 
 # Write your function here.
-
+def is_valid_hex_code(code):
+    hexCode = '1234567890abcdef'
+    try:
+        if code[0] == '#' and len(code) == 7:
+            for letter in code[1:]:
+                if letter.lower() not in hexCode:
+                    return False
+            return True
+        return False
+    except:
+        pass
 
 print(is_valid_hex_code("#CD5C5C"))  #> True
 print(is_valid_hex_code("#EAECEE"))  #> True

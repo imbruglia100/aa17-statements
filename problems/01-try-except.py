@@ -7,11 +7,15 @@ try:
     str = 'hello'
     str[0] = 'm'
     print(str)
+except:
+    pass
 finally:
     print('I happen regardless of any exceptions.')
 
 # Example 2
 try:
     print(x)
+except:
+    pass
 finally:
     print('I happen regardless of any exceptions.')
